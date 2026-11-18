@@ -1,0 +1,29 @@
+# Dataset and extracted features
+volly_ball/
+processed_features/
+processed_metadata/
+test_features/
+warmup code*/
+
+# Local demo & reference files
+demo_clips/
+demo_ui/
+*.pdf
+
+# Ignore intermediate / train-only checkpoints (keep only the 8 final best B1-B8 weights in git)
+models/*
+!models/b1_resnet50_merged_epoch10.pth
+!models/b2_resnet50_player_merged_epoch11.pth
+!models/b3_mlp_merged_epoch33.pth
+!models/b4_lstm_merged_epoch61.pth
+!models/b5_lstm_merged_epoch52.pth
+!models/b6_gru_merged_epoch12.pth
+!models/b7_lstm_merged_epoch54.pth
+!models/b8_gru_merged_epoch25.pth
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
